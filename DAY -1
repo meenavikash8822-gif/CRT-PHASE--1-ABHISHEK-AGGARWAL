@@ -1,3 +1,8 @@
+// Problem 1
+// Problem to cinvert celcius to fahrenhit
+
+
+
 #include<iostream>
 using namespace std;
 
@@ -11,7 +16,8 @@ int main(){
     
 }
 
-
+///problem 2
+/// local veribal and global variable
 
 
 #include <iostream>
@@ -27,4 +33,22 @@ int main() {
     result = (globalvariable /localvariable);
     cout << result << endl;
     return 0;
+}
+
+
+
+
+Program 3
+check wethere a given sides of triangle are equilateral or not ??
+
+#include <iostream>
+sing namespace std;
+
+int main() {
+int side1, side2, side3;
+cin >> side1 >> side2>> side3;
+
+bool isEqu = (side1 > 0) && (side1 =side2) && (side2=side3);
+cout << isEqu << endl;
+return 0;
 }
