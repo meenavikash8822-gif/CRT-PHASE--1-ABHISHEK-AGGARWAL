@@ -71,3 +71,25 @@ b = temp;
 // printing the values
 cout << a << "\n" << b << endl;
 return 0;
+
+
+
+// Program 5
+// Login Credentials
+#include <iostream>
+using namespace std;
+
+int main() {
+int userId = 1234;
+int userPassword = 0000;
+
+int inputId;
+int inputPassword;
+
+cin >> inputId >> inputPassword;
+
+bool isGranted = (userId == inputId) && (userPassword == inputPassword);
+cout << "Access Granted" << isGranted << endl;
+cout << "Access denied" << !isGranted << endl;
+
+return 0;|
