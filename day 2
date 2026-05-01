@@ -119,3 +119,72 @@ int main() {
 
     return 0;
 }
+
+
+
+//program 6// Problem -- 6
+// Customer supoort IVR system
+// 1 -- for support
+// 2 -- for billing
+// 3 - Technical Issue
+// 4 -- Talk to Agent
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+    cin >> choice;
+
+    switch(choice){
+        case 1:
+        cout<<"transferring call to the support team...";
+
+        case 2:
+        cout<<"transferring call to the billing and account  department...";
+
+        case 3:
+        cout<<"transferring call to the technical team...";
+
+        case 4:
+        cout<<"please wait while wo are connecting  your call to an angent";
+
+        default:
+        cout<<"enter a valid choice";
+
+    }
+    return 0;
+}
+
+
+
+// Problem 7 -- Nested if-else condition
+// Smart home lighting
+// Day -- Motion (Yes / no) -- Light off
+// night -- Motion (yes -- 100%) (no -- 10%)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string dayOrNight;
+    bool motionDetected;
+
+    cout << "Is it Day or Night?.. ";
+    cin >> dayOrNight;
+
+    cout << "Is motion detected?.. (1/0): ";
+    cin >> motionDetected;
+
+    if(dayOrNight == "Night" || dayOrNight == "night") {
+        if(motionDetected) {
+            cout << "Turn ON the LED with 100% brightness";
+        } else {
+            cout << "Turn ON the LED with 10% brightness";
+        }
+    } else {
+        cout << "Turn OFF the Lights ...";
+    }
+
+    return 0;
+}
