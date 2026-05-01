@@ -167,24 +167,21 @@ int main() {
 using namespace std;
 
 int main() {
-    string dayOrNight;
-    bool motionDetected;
+string dayOrNight;
+bool motionDetected;
 
-    cout << "Is it Day or Night?.. ";
-    cin >> dayOrNight;
+cout << "is it Day or Night ?.. ";
+cin >> dayOrNight;
+cout << "Is motion detected ?.. ";
+cin >> motionDetected;
 
-    cout << "Is motion detected?.. (1/0): ";
-    cin >> motionDetected;
+if(dayOrNight == "Night" |I dayOrNight == "night"){
+if(motionDetected){
+cout << "Turn ON the LED with 100% brightness";
+} else {
+cout << "Turn ON the LED with 10% brightness";
 
-    if(dayOrNight == "Night" || dayOrNight == "night") {
-        if(motionDetected) {
-            cout << "Turn ON the LED with 100% brightness";
-        } else {
-            cout << "Turn ON the LED with 10% brightness";
-        }
-    } else {
-        cout << "Turn OFF the Lights ...";
-    }
-
-    return 0;
+} else {
+cout << "Turn OFF the Lights ... ";
+}
 }
