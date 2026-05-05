@@ -72,3 +72,30 @@ int ticketNumber(){
 int main(){
     cout << ticketNumber();
 }
+
+#include <iostream>
+using namespace std;
+ 
+float CurrenCychange(float R ){
+    return R * 92.25;
+}
+
+problem - 6
+change the currency doller to rupees function
+
+#include <iostream>
+using namespace std;
+ 
+float CurrenCychange(float Rupees ){
+    return Rupees * 92.25;
+}
+
+int main(){
+    int R;
+    cout << " enter the momney.." ,R;
+    cin >>  R  ;
+    cout<< CurrenCychange(R);
+
+}
+
+
