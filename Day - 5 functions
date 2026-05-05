@@ -1,0 +1,74 @@
+//problem - 1
+//
+#include <iostream>
+using namespace std;
+
+void Printmessage(){
+    cout << "hi we are learning function";
+}
+
+int main(){
+    Printmessage();
+    return 0;
+}
+
+//problem 2
+// make a areacalculate function 
+
+#include <iostream>
+using namespace std;
+
+int calculateArea(int lenght, int widht){
+     return lenght * widht;
+}
+
+int main(){
+   int a = 10;
+   int b = 5;
+   int area = calculateArea(a, b);
+   cout<< area;
+}
+
+//problem 3
+//send message function.
+
+#include <iostream>
+using namespace std;
+
+void sendMessage(string message){
+    cout << message;
+}
+
+int main(){
+    sendMessage("BJP wons");
+}
+
+//problem - 4
+// make a function for door bell
+
+#include <iostream>
+using namespace std;
+
+void bellRing(){
+    cout <<"ting ting..";
+}
+
+int main(){
+    bellRing();
+    }
+
+
+
+//problem -5
+// ticketnumber make a function
+
+#include <iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main(){
+    cout << ticketNumber();
+}
