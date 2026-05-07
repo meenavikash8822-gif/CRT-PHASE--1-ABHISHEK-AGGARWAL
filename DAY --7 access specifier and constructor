@@ -70,3 +70,33 @@ int main(){
     obj1.accessLocker();
 }
 
+/////////////////////////////////////////////////////////////////
+                               //constructors
+// PROBLEM --3
+// constructor
+//4.1 parameterized Constructor
+
+#include <iostream>
+using namespace std;
+
+class student{
+    public:
+    string name;
+    int age;
+
+    student(string studentName, int studentAge){
+        name = studentName;
+        age = studentAge;
+
+    }
+    void intruduce(){
+        cout<<" hi there person name is "<< name << "and his age is "<< age << "\n";
+    }
+};
+int main (){
+    student s1("vikash",23);
+    s1.intruduce();
+}
+
+
+
