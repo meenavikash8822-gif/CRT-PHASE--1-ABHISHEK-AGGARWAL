@@ -60,7 +60,7 @@ int main() {
 }
 
 
-// 1.2 -- hierarchical Inheritance
+// problem -- 3 hierarchical Inheritance
 #include <iostream>
 using namespace std;
 
@@ -93,3 +93,63 @@ int main(){
     b.start();
     b.drive();
 }
+// problem no. 4
+// hybrid
+//dimond square
+#include<iostream>
+using namespace std;
+
+class a{
+public:
+    void show(){
+        cout <<"hi there..";
+    }  
+
+};
+class b : virtual public a{
+    // no logic
+};
+
+class c : virtual public a{
+    // no logic
+};
+
+class d : public b , public c{
+    //no logic
+};
+
+int main(){
+    d obj1;
+    obj1.show();
+
+}
+
+
+
+problem--5
+// 1.2 -- encapsulation
+#include <iostream>
+using namespace std;
+
+class bankaccount{
+    private:
+    int bankbalance;
+public:
+    void setbalance(int amount){
+        if(amount >= 0){
+            bankbalance = amount; 
+        }else{
+            cout<<"enter a valid amount";
+        }
+    }
+    int getbalance(){
+        return bankbalance;
+    }
+};
+
+int main(){
+    bankaccount obj1;
+    obj1.setbalance(5000);
+    cout<<obj1.getbalance();
+}
+
